@@ -24,6 +24,7 @@ const resetBtn = document.querySelector('#resetBtn');
 
 const resetGame = () => {
   // * update message
+  message.style.color = 'black';
   message.textContent = 'Player One Turn';
 
   // * reset score and text content
@@ -78,12 +79,14 @@ rollBtn.addEventListener('click', () => {
 
   if (playerOneScore >= 20) {
     message.innerText = 'Player One Wins';
+    message.style.color = '#FF7F50';
     rollBtn.style.display = 'none';
     resetBtn.style.display = 'inline';
   }
 
   if (playerTwoScore >= 20) {
     message.innerText = 'Player Two Wins';
+    message.style.color = '#FF7F50';
     rollBtn.style.display = 'none';
     resetBtn.style.display = 'inline';
   }
