@@ -11,7 +11,7 @@ const playerOne = document.querySelector('#player1');
 const playerOneScoreboard = document.querySelector('#player1Scoreboard');
 const playerOneDice = document.querySelector('#player1Dice');
 
-// * player 2 variables
+// * player two variables
 const playerTwo = document.querySelector('#player2');
 const playerTwoScoreboard = document.querySelector('#player2Scoreboard');
 const playerTwoDice = document.querySelector('#player2Dice');
