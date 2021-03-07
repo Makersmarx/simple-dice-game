@@ -10,11 +10,13 @@ const message = document.querySelector('#message');
 const playerOne = document.querySelector('#player1');
 const playerOneScoreboard = document.querySelector('#player1Scoreboard');
 const playerOneDice = document.querySelector('#player1Dice');
+const playerOneNinja = document.querySelector('#ninjaOne');
 
 // * player 2 variables
 const playerTwo = document.querySelector('#player2');
 const playerTwoScoreboard = document.querySelector('#player2Scoreboard');
 const playerTwoDice = document.querySelector('#player2Dice');
+const playerTwoNinja = document.querySelector('#ninjaTwo');
 
 // * buttons
 const rollBtn = document.querySelector('#rollBtn');
@@ -41,6 +43,10 @@ const resetGame = () => {
   // * remove and add shadow to player one
   playerTwoDice.classList.remove('active');
   playerOneDice.classList.add('active');
+
+  // * remove gif images for player one and two
+  playerOneNinja.style.display = 'none';
+  playerTwoNinja.style.display = 'none';
 
   // * reset button
   resetBtn.style.display = 'none';
@@ -79,6 +85,7 @@ rollBtn.addEventListener('click', () => {
 
   if (playerOneScore >= 20) {
     message.innerText = 'Player One Wins';
+    playerOneNinja.style.display = 'block';
     message.style.color = '#FF7F50';
     rollBtn.style.display = 'none';
     resetBtn.style.display = 'inline';
@@ -86,6 +93,7 @@ rollBtn.addEventListener('click', () => {
 
   if (playerTwoScore >= 20) {
     message.innerText = 'Player Two Wins';
+    playerTwoNinja.style.display = 'block';
     message.style.color = '#FF7F50';
     rollBtn.style.display = 'none';
     resetBtn.style.display = 'inline';

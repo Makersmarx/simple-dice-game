@@ -102,3 +102,24 @@ button:focus {
 #player1Scoreboard {
   color: var(--color-5);
 }
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ninjaOne {
+  margin-right: 200px;
+  display: none;
+}
+
+#ninjaTwo {
+  display: none;
+  margin-left: 200px;
+}
