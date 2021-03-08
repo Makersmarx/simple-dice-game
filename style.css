@@ -38,6 +38,11 @@ body {
   }
 }
 
+p {
+  font-size: 14px;
+  color: #ff8b94;
+}
+
 .container {
   width: 400px;
   text-align: center;
